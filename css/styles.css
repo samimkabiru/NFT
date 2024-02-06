@@ -92,3 +92,12 @@ p {
 .card__user {
   margin: 1.5rem 0;
 }
+
+/* Block */
+.block {
+  padding: 4.5rem 1.5rem;
+}
+
+.block--dark {
+  background: hsl(217 54% 11%);
+}
