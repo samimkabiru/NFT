@@ -20,6 +20,7 @@ h1 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 p {
@@ -66,4 +67,28 @@ p {
 .showcase__value--primary {
   color: hsl(178, 100%, 50%);
   font-weight: 600;
+}
+
+/* Card */
+.card {
+  box-shadow: 0 0 40px 10px #ccc;
+  max-width: 400px;
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 0 auto;
+  background: hsl(216 50% 16%);
+}
+
+.card__image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__showcase {
+  padding: 1.5rem 0;
+  border-bottom: 1.5px solid hsl(215 32% 27%);
+}
+
+.card__user {
+  margin: 1.5rem 0;
 }
