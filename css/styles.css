@@ -83,6 +83,19 @@ p {
   border-radius: 10px;
 }
 
+.card__header {
+  position: relative;
+}
+
+.card__header:hover .overlay {
+  background: hsl(178 100% 50% / 0.5);
+}
+
+.card__header:hover .overlay__icon {
+  max-height: 100%;
+  opacity: 1;
+}
+
 .card__showcase {
   padding: 1.5rem 0;
   border-bottom: 1.5px solid hsl(215 32% 27%);
@@ -99,4 +112,24 @@ p {
 
 .block--dark {
   background: hsl(217 54% 11%);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay__icon {
+  width: 45px;
+  height: 45px;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s;
 }
