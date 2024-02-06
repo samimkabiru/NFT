@@ -52,3 +52,18 @@ p {
   width: 20px;
   height: 20px;
 }
+
+/* Showcase Block */
+.showcase {
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase__value {
+  margin-left: 0.5rem;
+}
+
+.showcase__value--primary {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
