@@ -46,3 +46,9 @@ p {
 .media__name {
   color: #fff;
 }
+
+/* Icons */
+.icon--small {
+  width: 20px;
+  height: 20px;
+}
