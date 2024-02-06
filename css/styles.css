@@ -46,6 +46,12 @@ p {
 
 .media__name {
   color: #fff;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.media__name:hover {
+  color: hsl(178 100% 50%);
 }
 
 /* Icons */
@@ -78,13 +84,26 @@ p {
   background: hsl(216 50% 16%);
 }
 
-.card__image {
-  width: 100%;
-  border-radius: 10px;
-}
-
 .card__header {
   position: relative;
+  cursor: pointer;
+  height: 330px;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card__heading {
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.card__heading:hover {
+  color: hsl(178 100% 50%);
 }
 
 .card__header:hover .overlay {
@@ -114,10 +133,11 @@ p {
   background: hsl(217 54% 11%);
 }
 
+/* Overlay */
 .overlay {
   position: absolute;
   width: 100%;
-  height: 400px;
+  height: 100%;
   background: transparent;
   border-radius: 10px;
   transition: background 0.3s;
